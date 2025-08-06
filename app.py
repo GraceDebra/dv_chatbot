@@ -8,7 +8,7 @@ import uuid
 app = Flask(__name__)
 
 # Enable CORS for React integration
-CORS(app, origins=[ "http://localhost:5173", "http://localhost:5174", "https://safehaven.co.ke/" ], supports_credentials=True)
+CORS(app, origins="*")
 
 # Crisis keywords that trigger immediate resources
 CRISIS_KEYWORDS = [
